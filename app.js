@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 mongoose.connect("mongodb://localhost:27017/wikiDB", {useNewUrlParser: true});
-// mongoose.connect('mongodb+srv://gosteve:chemistry@cluster0-dzckd.mongodb.net/todoListDB?retryWrites=true&w=majority', {useNewUrlParser: true});
+
 
 const wikiSchema = new mongoose.Schema({
   title: String,
